@@ -11,12 +11,12 @@ Main landing page for **RoJho Media** main product cluster.
 ## Run locally
 
 ```bash
-npm install
-npm run dev
+pnpm install
+pnpm dev
 ```
 
 ## Build
 
 ```bash
-npm run build
+pnpm build
 ```
