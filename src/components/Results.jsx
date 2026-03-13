@@ -38,8 +38,8 @@ export default function Results() {
   return (
     <section id="results" className="relative py-20 lg:py-28 bg-dark text-white overflow-clip bg-grain-dark">
       {/* Floating background orbs */}
-      <div className="absolute top-10 left-0 w-72 h-72 bg-rojho/[0.10] rounded-full blur-[120px] animate-orb-drift-slow pointer-events-none" />
-      <div className="absolute bottom-20 right-0 w-96 h-96 bg-rojho/[0.08] rounded-full blur-[120px] animate-orb-drift pointer-events-none" />
+      <div className="absolute top-10 left-0 w-96 h-96 bg-rojho/15 rounded-full blur-[150px] animate-orb-drift-slow pointer-events-none" />
+      <div className="absolute bottom-20 right-0 w-[500px] h-[500px] bg-rojho/20 rounded-full blur-[150px] animate-orb-drift pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <ScrollReveal>
