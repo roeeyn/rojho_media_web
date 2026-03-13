@@ -1,4 +1,6 @@
 import { Eye, MessageSquareOff, TrendingDown } from 'lucide-react'
+import ScrollReveal from './ScrollReveal'
+import StaggerGroup from './StaggerGroup'
 
 const pains = [
   {
@@ -25,20 +27,22 @@ export default function PainPoints() {
   return (
     <section id="about" className="py-20 lg:py-28">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center max-w-2xl mx-auto">
-          <span className="inline-block px-4 py-1.5 bg-charcoal/5 text-charcoal/60 text-xs font-semibold uppercase tracking-wider rounded-full">
-            ¿Te suena familiar?
-          </span>
-          <h2 className="mt-5 text-3xl sm:text-4xl font-extrabold text-charcoal">
-            Los retos que frenan el crecimiento de tu marca
-          </h2>
-          <p className="mt-4 text-charcoal/60 text-lg">
-            La mayoría de los fundadores saben que algo no está funcionando —
-            simplemente no logran identificar qué.
-          </p>
-        </div>
+        <ScrollReveal>
+          <div className="text-center max-w-2xl mx-auto">
+            <span className="inline-block px-4 py-1.5 bg-charcoal/5 text-charcoal/60 text-xs font-semibold uppercase tracking-wider rounded-full">
+              ¿Te suena familiar?
+            </span>
+            <h2 className="mt-5 text-3xl sm:text-4xl font-extrabold text-charcoal">
+              Los retos que frenan el crecimiento de tu marca
+            </h2>
+            <p className="mt-4 text-charcoal/60 text-lg">
+              La mayoría de los fundadores saben que algo no está funcionando —
+              simplemente no logran identificar qué.
+            </p>
+          </div>
+        </ScrollReveal>
 
-        <div className="mt-14 grid md:grid-cols-3 gap-6">
+        <StaggerGroup interval={150} direction="up" as="div" className="mt-14 grid md:grid-cols-3 gap-6">
           {pains.map((pain, i) => (
             <div
               key={i}
@@ -55,7 +59,7 @@ export default function PainPoints() {
               </p>
             </div>
           ))}
-        </div>
+        </StaggerGroup>
       </div>
     </section>
   )
