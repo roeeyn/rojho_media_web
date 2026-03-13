@@ -7,9 +7,9 @@ export default function FinalCTA() {
       <div className="max-w-7xl mx-auto px-6">
         <ScrollReveal direction="scale" duration={700}>
           <div className="relative rounded-3xl bg-charcoal overflow-hidden px-8 py-16 sm:px-16 sm:py-20 text-center">
-            {/* Decorative gradients */}
-            <div className="absolute top-0 left-0 w-64 h-64 bg-rojho/20 rounded-full blur-[100px] -translate-x-1/2 -translate-y-1/2" />
-            <div className="absolute bottom-0 right-0 w-80 h-80 bg-rojho/10 rounded-full blur-[120px] translate-x-1/3 translate-y-1/3" />
+            {/* Decorative gradients - now animated */}
+            <div className="absolute top-0 left-0 w-64 h-64 bg-rojho/20 rounded-full blur-[100px] -translate-x-1/2 -translate-y-1/2 animate-orb-drift" />
+            <div className="absolute bottom-0 right-0 w-80 h-80 bg-rojho/10 rounded-full blur-[120px] translate-x-1/3 translate-y-1/3 animate-orb-drift-reverse" />
 
             <div className="relative z-10 max-w-2xl mx-auto">
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight">

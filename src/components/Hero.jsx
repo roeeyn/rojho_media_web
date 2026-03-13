@@ -11,8 +11,12 @@ const stats = [
 
 export default function Hero() {
   return (
-    <section className="pt-28 pb-16 lg:pt-36 lg:pb-24">
-      <div className="max-w-7xl mx-auto px-6">
+    <section className="relative pt-28 pb-16 lg:pt-36 lg:pb-24 overflow-hidden bg-grain">
+      {/* Floating background orbs */}
+      <div className="absolute top-20 -left-32 w-96 h-96 bg-rojho/[0.04] rounded-full blur-3xl animate-orb-drift pointer-events-none" />
+      <div className="absolute bottom-10 -right-24 w-80 h-80 bg-rojho/[0.03] rounded-full blur-3xl animate-orb-drift-reverse pointer-events-none" />
+
+      <div className="relative z-10 max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
           {/* Left content */}
           <div>
@@ -54,7 +58,7 @@ export default function Hero() {
 
           {/* Right visual */}
           <div className="relative flex items-center justify-center lg:justify-end">
-            <div className="absolute w-80 h-80 bg-rojho/10 rounded-full blur-3xl -z-10" />
+            <div className="absolute w-80 h-80 bg-rojho/10 rounded-full blur-3xl -z-10 animate-orb-drift-slow" />
 
             {/* Main dashboard card */}
             <div className="relative bg-white rounded-2xl shadow-xl border border-charcoal/5 p-6 w-72 sm:w-80">

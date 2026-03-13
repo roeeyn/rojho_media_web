@@ -25,8 +25,8 @@ const pains = [
 
 export default function PainPoints() {
   return (
-    <section id="about" className="py-20 lg:py-28">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="about" className="relative py-20 lg:py-28 bg-grain">
+      <div className="relative z-10 max-w-7xl mx-auto px-6">
         <ScrollReveal>
           <div className="text-center max-w-2xl mx-auto">
             <span className="inline-block px-4 py-1.5 bg-charcoal/5 text-charcoal/60 text-xs font-semibold uppercase tracking-wider rounded-full">
