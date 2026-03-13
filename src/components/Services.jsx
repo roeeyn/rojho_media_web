@@ -1,4 +1,6 @@
 import { PenTool, Video, Monitor, Megaphone, ArrowUpRight } from 'lucide-react'
+import ScrollReveal from './ScrollReveal'
+import StaggerGroup from './StaggerGroup'
 
 const services = [
   {
@@ -31,21 +33,23 @@ export default function Services() {
   return (
     <section id="services" className="py-20 lg:py-28">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center max-w-2xl mx-auto">
-          <span className="inline-block px-4 py-1.5 bg-rojho/10 text-rojho-dark text-xs font-semibold uppercase tracking-wider rounded-full">
-            Lo Que Hacemos
-          </span>
-          <h2 className="mt-5 text-3xl sm:text-4xl font-extrabold text-charcoal">
-            Todo lo que tu marca necesita para{' '}
-            <span className="font-display italic text-rojho">brillar</span>
-          </h2>
-          <p className="mt-4 text-charcoal/60 text-lg">
-            De la estrategia a la ejecución, ofrecemos un stack completo de
-            medios diseñado para fundadores que quieren resultados reales.
-          </p>
-        </div>
+        <ScrollReveal>
+          <div className="text-center max-w-2xl mx-auto">
+            <span className="inline-block px-4 py-1.5 bg-rojho/10 text-rojho-dark text-xs font-semibold uppercase tracking-wider rounded-full">
+              Lo Que Hacemos
+            </span>
+            <h2 className="mt-5 text-3xl sm:text-4xl font-extrabold text-charcoal">
+              Todo lo que tu marca necesita para{' '}
+              <span className="font-display italic text-rojho">brillar</span>
+            </h2>
+            <p className="mt-4 text-charcoal/60 text-lg">
+              De la estrategia a la ejecución, ofrecemos un stack completo de
+              medios diseñado para fundadores que quieren resultados reales.
+            </p>
+          </div>
+        </ScrollReveal>
 
-        <div className="mt-14 grid sm:grid-cols-2 gap-6">
+        <StaggerGroup interval={150} direction="up" as="div" className="mt-14 grid sm:grid-cols-2 gap-6">
           {services.map((service, i) => (
             <div
               key={i}
@@ -65,7 +69,7 @@ export default function Services() {
               </p>
             </div>
           ))}
-        </div>
+        </StaggerGroup>
       </div>
     </section>
   )
