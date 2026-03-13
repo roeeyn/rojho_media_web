@@ -1,4 +1,6 @@
 import { Compass, Palette, Rocket } from 'lucide-react'
+import ScrollReveal from './ScrollReveal'
+import StaggerGroup from './StaggerGroup'
 
 const steps = [
   {
@@ -29,20 +31,24 @@ export default function Solution() {
     <section className="py-20 lg:py-28 bg-dark text-white">
       <div className="max-w-7xl mx-auto px-6">
         <div className="max-w-2xl">
-          <span className="inline-block px-4 py-1.5 bg-rojho/15 text-rojho-light text-xs font-semibold uppercase tracking-wider rounded-full">
-            Nuestro Enfoque
-          </span>
-          <h2 className="mt-5 text-3xl sm:text-4xl font-extrabold">
-            Estrategia y creatividad.{' '}
-            <span className="text-rojho">Los resultados llegan solos.</span>
-          </h2>
-          <p className="mt-4 text-white/60 text-lg">
-            No solo hacemos que las cosas se vean bien — construimos sistemas
-            de medios que mueven a las personas de la atención a la acción.
-          </p>
+          <ScrollReveal>
+            <span className="inline-block px-4 py-1.5 bg-rojho/15 text-rojho-light text-xs font-semibold uppercase tracking-wider rounded-full">
+              Nuestro Enfoque
+            </span>
+            <h2 className="mt-5 text-3xl sm:text-4xl font-extrabold">
+              Estrategia y creatividad.{' '}
+              <span className="text-rojho">Los resultados llegan solos.</span>
+            </h2>
+          </ScrollReveal>
+          <ScrollReveal delay={150}>
+            <p className="mt-4 text-white/60 text-lg">
+              No solo hacemos que las cosas se vean bien — construimos sistemas
+              de medios que mueven a las personas de la atención a la acción.
+            </p>
+          </ScrollReveal>
         </div>
 
-        <div className="mt-14 grid md:grid-cols-3 gap-6">
+        <StaggerGroup interval={200} direction="up" as="div" className="mt-14 grid md:grid-cols-3 gap-6">
           {steps.map((step, i) => (
             <div
               key={i}
@@ -62,7 +68,7 @@ export default function Solution() {
               </p>
             </div>
           ))}
-        </div>
+        </StaggerGroup>
       </div>
     </section>
   )
