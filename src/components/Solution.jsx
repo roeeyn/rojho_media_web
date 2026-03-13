@@ -30,8 +30,8 @@ export default function Solution() {
   return (
     <section className="relative py-20 lg:py-28 bg-dark text-white overflow-hidden bg-grain-dark">
       {/* Floating background orbs */}
-      <div className="absolute top-1/4 -right-20 w-96 h-96 bg-rojho/[0.06] rounded-full blur-3xl animate-orb-drift pointer-events-none" />
-      <div className="absolute bottom-1/4 -left-32 w-80 h-80 bg-rojho/[0.04] rounded-full blur-3xl animate-orb-drift-reverse pointer-events-none" />
+      <div className="absolute top-1/4 -right-20 w-96 h-96 bg-rojho/[0.15] rounded-full blur-3xl animate-orb-drift pointer-events-none" />
+      <div className="absolute bottom-1/4 -left-32 w-80 h-80 bg-rojho/[0.10] rounded-full blur-3xl animate-orb-drift-reverse pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <div className="max-w-2xl">

@@ -13,8 +13,8 @@ export default function Hero() {
   return (
     <section className="relative pt-28 pb-16 lg:pt-36 lg:pb-24 overflow-hidden bg-grain">
       {/* Floating background orbs */}
-      <div className="absolute top-20 -left-32 w-96 h-96 bg-rojho/[0.04] rounded-full blur-3xl animate-orb-drift pointer-events-none" />
-      <div className="absolute bottom-10 -right-24 w-80 h-80 bg-rojho/[0.03] rounded-full blur-3xl animate-orb-drift-reverse pointer-events-none" />
+      <div className="absolute top-20 -left-32 w-96 h-96 bg-rojho/[0.12] rounded-full blur-3xl animate-orb-drift pointer-events-none" />
+      <div className="absolute bottom-10 -right-24 w-80 h-80 bg-rojho/[0.08] rounded-full blur-3xl animate-orb-drift-reverse pointer-events-none" />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
