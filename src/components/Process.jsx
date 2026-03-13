@@ -1,4 +1,6 @@
 import { Search, Lightbulb, Hammer, BarChart3 } from 'lucide-react'
+import ScrollReveal from './ScrollReveal'
+import StaggerGroup from './StaggerGroup'
 
 const steps = [
   {
@@ -35,21 +37,23 @@ export default function Process() {
   return (
     <section id="process" className="py-20 lg:py-28">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center max-w-2xl mx-auto">
-          <span className="inline-block px-4 py-1.5 bg-rojho/10 text-rojho-dark text-xs font-semibold uppercase tracking-wider rounded-full">
-            Cómo Trabajamos
-          </span>
-          <h2 className="mt-5 text-3xl sm:text-4xl font-extrabold text-charcoal">
-            Un proceso probado diseñado para{' '}
-            <span className="font-display italic text-rojho">resultados</span>
-          </h2>
-          <p className="mt-4 text-charcoal/60 text-lg">
-            Sin improvisación. Sin esfuerzo desperdiciado. Solo un camino claro
-            de la idea al impacto.
-          </p>
-        </div>
+        <ScrollReveal>
+          <div className="text-center max-w-2xl mx-auto">
+            <span className="inline-block px-4 py-1.5 bg-rojho/10 text-rojho-dark text-xs font-semibold uppercase tracking-wider rounded-full">
+              Cómo Trabajamos
+            </span>
+            <h2 className="mt-5 text-3xl sm:text-4xl font-extrabold text-charcoal">
+              Un proceso probado diseñado para{' '}
+              <span className="font-display italic text-rojho">resultados</span>
+            </h2>
+            <p className="mt-4 text-charcoal/60 text-lg">
+              Sin improvisación. Sin esfuerzo desperdiciado. Solo un camino claro
+              de la idea al impacto.
+            </p>
+          </div>
+        </ScrollReveal>
 
-        <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <StaggerGroup interval={150} direction="up" as="div" className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
           {steps.map((step, i) => (
             <div key={i} className="relative">
               <div className="group rounded-2xl border border-charcoal/8 bg-white p-8 hover:shadow-lg hover:border-rojho/30 transition-all duration-300 cursor-pointer text-center h-full">
@@ -68,7 +72,7 @@ export default function Process() {
               </div>
             </div>
           ))}
-        </div>
+        </StaggerGroup>
       </div>
     </section>
   )
