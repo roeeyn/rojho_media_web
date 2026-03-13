@@ -38,7 +38,7 @@ export const hero = {
       </>
     ),
     description:
-      'No somos una agencia cualquiera — combinamos mensajes estratégicos, narrativa visual y experiencias enfocadas en conversión para ayudar a fundadores y negocios modernos a crecer con claridad e impacto.',
+      'Somos la agencia que combina mensajes estratégicos, narrativa visual y experiencias enfocadas en conversión para ayudar a fundadores y negocios modernos a crecer con claridad e impacto.',
     cta: 'Iniciar un Proyecto',
     ctaSecondary: 'Conoce Más',
     stats: [
@@ -62,7 +62,7 @@ export const hero = {
       </>
     ),
     description:
-      'Conectamos WhatsApp, Instagram, Facebook y Email con inteligencia artificial para que tu negocio responda, agende y venda — sin que tengas que estar ahí.',
+      'Conectamos WhatsApp, Instagram, Facebook y Email con inteligencia artificial para que tu negocio responda, agende y venda mientras tú te enfocas en crecer.',
     cta: 'Automatiza tu Negocio',
     ctaSecondary: 'Ver Cómo Funciona',
     stats: [
@@ -85,19 +85,19 @@ export const painPoints = {
     badge: '¿Te suena familiar?',
     title: 'Los retos que frenan el crecimiento de tu marca',
     description:
-      'La mayoría de los fundadores saben que algo no está funcionando — simplemente no logran identificar qué.',
+      'La mayoría de los fundadores saben que algo falla, simplemente les cuesta identificar qué.',
     items: [
       {
         icon: Eye,
         title: 'Bonito pero sin resultados',
         description:
-          'Tu marca se ve increíble por fuera, pero tus visuales no están generando conversiones. Lo bonito solo no paga las cuentas.',
+          'Tu marca se ve increíble por fuera, pero tus visuales aún están lejos de generar conversiones. Lo bonito solo rara vez paga las cuentas.',
       },
       {
         icon: MessageSquareOff,
         title: 'Mensajes inconsistentes',
         description:
-          'Tu voz cambia de plataforma en plataforma. Sin un posicionamiento claro, tu audiencia no puede confiar en ti — ni recordarte.',
+          'Tu voz cambia de plataforma en plataforma. Sin un posicionamiento claro, tu audiencia difícilmente puede confiar en ti, mucho menos recordarte.',
       },
       {
         icon: TrendingDown,
@@ -111,19 +111,19 @@ export const painPoints = {
     badge: '¿Te suena familiar?',
     title: 'Lo que está frenando tus operaciones',
     description:
-      'Tu negocio crece, pero tus procesos manuales no escalan contigo.',
+      'Tu negocio crece, pero tus procesos manuales se quedan atrás.',
     items: [
       {
         icon: Clock,
         title: 'Respuestas lentas que pierden clientes',
         description:
-          'Cada minuto que tardas en responder es un cliente que se va con tu competencia. No puedes estar pendiente de cada mensaje, todo el día.',
+          'Cada minuto que tardas en responder es un cliente que se va con tu competencia. Estar pendiente de cada mensaje todo el día es imposible.',
       },
       {
         icon: Repeat,
         title: 'Tareas repetitivas que consumen tu tiempo',
         description:
-          'Agendar, responder las mismas preguntas, dar seguimiento — tu equipo pierde horas en tareas que una máquina puede hacer mejor.',
+          'Agendar, responder las mismas preguntas, dar seguimiento: tu equipo pierde horas en tareas que una máquina puede hacer mejor.',
       },
       {
         icon: Unplug,
@@ -147,14 +147,14 @@ export const solution = {
       </>
     ),
     description:
-      'No solo hacemos que las cosas se vean bien — construimos sistemas de medios que mueven a las personas de la atención a la acción.',
+      'Construimos sistemas de medios que mueven a las personas de la atención a la acción. Cada pieza con estrategia, cada detalle con intención.',
     steps: [
       {
         icon: Compass,
         phase: '01',
         title: 'Estrategia',
         description:
-          'Comenzamos con un trabajo profundo de posicionamiento — entendiendo a tu audiencia, tu ventaja competitiva y la historia que vende.',
+          'Comenzamos con un trabajo profundo de posicionamiento: entendemos a tu audiencia, tu ventaja competitiva y la historia que vende.',
       },
       {
         icon: Palette,
@@ -232,7 +232,7 @@ export const services = {
         icon: Video,
         title: 'Producción de Contenido y Medios',
         description:
-          'Narrativa visual premium — desde videos de marca hasta sistemas fotográficos y contenido social que captura la atención.',
+          'Narrativa visual premium: desde videos de marca hasta sistemas fotográficos y contenido social que captura la atención.',
       },
       {
         icon: Monitor,
@@ -257,13 +257,13 @@ export const services = {
       </>
     ),
     description:
-      'Conectamos tus canales de comunicación con inteligencia artificial para que tu negocio nunca deje de atender, vender y crecer.',
+      'Conectamos tus canales de comunicación con inteligencia artificial para que tu negocio siempre esté atendiendo, vendiendo y creciendo.',
     items: [
       {
         icon: MessageCircle,
         title: 'WhatsApp Inteligente, 24/7',
         description:
-          'Respuestas instantáneas en WhatsApp que agendan, resuelven dudas y cierran ventas — como tu mejor vendedor, pero sin descanso.',
+          'Respuestas instantáneas en WhatsApp que agendan, resuelven dudas y cierran ventas. Como tu mejor vendedor, pero disponible siempre.',
       },
       {
         icon: Bot,
@@ -281,7 +281,7 @@ export const services = {
         icon: Headphones,
         title: 'Soporte al Cliente sin Esperas',
         description:
-          'Un sistema de atención que resuelve preguntas frecuentes, escala casos complejos y mantiene a tus clientes felices — automáticamente.',
+          'Un sistema de atención que resuelve preguntas frecuentes, escala casos complejos y mantiene a tus clientes felices de forma automática.',
       },
     ],
   },
@@ -292,29 +292,29 @@ export const services = {
 export const results = {
   growth: {
     badge: 'Pruebas y Resultados',
-    title: 'No nos creas a nosotros',
+    title: 'Que los resultados hablen',
     description:
-      'Esto es lo que dicen nuestros clientes — y los números que lo respaldan.',
+      'Esto es lo que dicen nuestros clientes, respaldado por los números.',
     testimonials: [
       {
         quote:
-          'RoJho Media transformó por completo cómo nos presentamos. Nuestra tasa de conversión se duplicó en 3 meses.',
-        author: 'Sara K.',
-        role: 'Fundadora @ TechBridge',
+          'Pasamos de publicar sin estrategia a tener una presencia que realmente conecta con nuestra audiencia. Nuestras tablas de quesos y maridajes ahora se agotan antes de anunciarlas.',
+        author: 'Jeisson Cruz',
+        role: 'Fundador @ Vino Colibrí',
         stars: 5,
       },
       {
         quote:
-          'No solo hacen que las cosas se vean bonitas — piensan estratégicamente. Eso es lo que los distingue de cualquier otra agencia.',
-        author: 'Marco L.',
-        role: 'CEO @ Elevate Health',
+          'Me ayudaron a construir mi marca personal y darle estructura a mi plataforma de cursos. Hoy mi comunidad de bienestar crece de forma orgánica y constante.',
+        author: 'Leticia Neri',
+        role: 'Terapeuta y Fundadora @ Todo Está Bien',
         stars: 5,
       },
       {
         quote:
-          'Trabajar con RoJho se sintió como tener un equipo creativo interno que realmente entiende el crecimiento de negocio.',
-        author: 'Ana R.',
-        role: 'Fundadora @ Bloom Studio',
+          'Llegamos a RoJho sin saber cómo posicionar nuestra galería en digital. Ahora nuestras piezas se mueven antes de las exposiciones gracias al contenido que creamos juntos.',
+        author: 'Lourdes G.',
+        role: 'Directora @ Galería Luesga, Tlaxcala',
         stars: 5,
       },
     ],
@@ -322,34 +322,34 @@ export const results = {
       { target: 2, suffix: 'x', label: 'Aumento Prom. en Conversión' },
       { target: 300, suffix: '+', label: 'Piezas de Contenido' },
       { target: 95, suffix: '%', label: 'Retención de Clientes' },
-      { target: 50, suffix: '+', label: 'Marcas Transformadas' },
+      { target: 10, suffix: '+', label: 'Marcas Transformadas' },
     ],
   },
   automation: {
     badge: 'Pruebas y Resultados',
     title: 'Resultados que hablan solos',
     description:
-      'Negocios que ya automatizaron sus operaciones con nosotros — y los números que lograron.',
+      'Negocios que ya automatizaron sus operaciones con nosotros, y los números que lograron.',
     testimonials: [
       {
         quote:
-          'Antes tardábamos horas en responder. Ahora nuestro WhatsApp responde en segundos y agenda citas solo. Las ventas subieron 40%.',
-        author: 'Carlos M.',
-        role: 'Director @ FastClinic',
+          'Automatizaron nuestros pedidos por Instagram, Facebook y WhatsApp. Antes perdíamos ventas por tardar en responder; ahora el sistema cotiza y confirma solo.',
+        author: 'Jeisson Cruz',
+        role: 'Fundador @ Vino Colibrí',
         stars: 5,
       },
       {
         quote:
-          'Conectaron nuestro Instagram, WhatsApp y email en un solo sistema. Dejamos de perder clientes por no responder a tiempo.',
-        author: 'Lucía P.',
-        role: 'Fundadora @ Glow Beauty',
+          'Teníamos todo en libretas y grupos de WhatsApp. Nos armaron un sistema donde los pedidos llegan organizados y los clientes reciben confirmación al instante.',
+        author: 'Lourdes G.',
+        role: 'Directora @ Galería Luesga, Tlaxcala',
         stars: 5,
       },
       {
         quote:
-          'Mi equipo recuperó 30 horas a la semana. Lo que antes hacíamos manualmente ahora lo hace el sistema mejor que nosotros.',
-        author: 'Diego R.',
-        role: 'COO @ LogiExpress',
+          'Nuestras operaciones de impresión dependían de llamadas y mensajes manuales. Ahora los clientes cotizan, aprueban y pagan sin que tengamos que intervenir.',
+        author: 'Vero Guzmán',
+        role: 'Directora @ ServiPrint',
         stars: 5,
       },
     ],
@@ -357,7 +357,7 @@ export const results = {
       { target: 3, suffix: 's', label: 'Tiempo de Respuesta Prom.' },
       { target: 40, suffix: 'hrs', label: 'Ahorradas por Semana' },
       { target: 98, suffix: '%', label: 'Satisfacción del Cliente' },
-      { target: 35, suffix: '+', label: 'Negocios Automatizados' },
+      { target: 10, suffix: '+', label: 'Negocios Automatizados' },
     ],
   },
 }
@@ -395,7 +395,7 @@ export const process = {
         number: '03',
         title: 'Producción y Desarrollo',
         description:
-          'Nuestro equipo crea contenido premium, diseños y experiencias digitales — todo alineado con tu estrategia.',
+          'Nuestro equipo crea contenido premium, diseños y experiencias digitales, todo alineado con tu estrategia.',
       },
       {
         icon: BarChart3,
@@ -423,7 +423,7 @@ export const process = {
         number: '01',
         title: 'Auditoría de Canales',
         description:
-          'Mapeamos tus flujos de comunicación actuales — WhatsApp, redes, email — e identificamos las oportunidades de automatización con mayor retorno.',
+          'Mapeamos tus flujos de comunicación actuales (WhatsApp, redes, email) e identificamos las oportunidades de automatización con mayor retorno.',
       },
       {
         icon: Settings,

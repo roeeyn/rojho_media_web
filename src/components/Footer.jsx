@@ -1,4 +1,4 @@
-import { ArrowUpRight } from 'lucide-react'
+// import { ArrowUpRight } from 'lucide-react' // uncomment when social accounts are ready
 import ScrollReveal from './ScrollReveal'
 
 const navLinks = [
@@ -8,11 +8,12 @@ const navLinks = [
   { name: 'Resultados', href: '#results' },
 ]
 
-const socialLinks = [
-  { name: 'Instagram', href: 'https://instagram.com/rojhomedia' },
-  { name: 'LinkedIn', href: 'https://linkedin.com/company/rojhomedia' },
-  { name: 'X / Twitter', href: 'https://x.com/rojhomedia' },
-]
+// Uncomment when social accounts are ready
+// const socialLinks = [
+//   { name: 'Instagram', href: 'https://instagram.com/rojhomedia' },
+//   { name: 'LinkedIn', href: 'https://linkedin.com/company/rojhomedia' },
+//   { name: 'X / Twitter', href: 'https://x.com/rojhomedia' },
+// ]
 
 export default function Footer() {
   return (
@@ -53,7 +54,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Social */}
+          {/* Social — uncomment when social accounts are ready
           <div>
             <h4 className="text-sm font-semibold text-charcoal mb-4">
               Síguenos
@@ -74,6 +75,7 @@ export default function Footer() {
               ))}
             </ul>
           </div>
+          */}
 
           {/* Contact */}
           <div>
