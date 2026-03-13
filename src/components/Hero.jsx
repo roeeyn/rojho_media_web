@@ -1,6 +1,7 @@
 import { ArrowRight, TrendingUp, Zap } from 'lucide-react'
 import ScrollReveal from './ScrollReveal'
 import AnimatedCounter from './AnimatedCounter'
+import FloatingOrb from './FloatingOrb'
 
 const stats = [
   { target: 50, suffix: '+', label: 'Proyectos Entregados' },
@@ -13,8 +14,8 @@ export default function Hero() {
   return (
     <section className="relative pt-28 pb-16 lg:pt-36 lg:pb-24 overflow-hidden bg-grain">
       {/* Floating background orbs */}
-      <div className="absolute top-20 -left-32 w-96 h-96 bg-rojho/[0.12] rounded-full blur-3xl animate-orb-drift pointer-events-none" />
-      <div className="absolute bottom-10 -right-24 w-80 h-80 bg-rojho/[0.08] rounded-full blur-3xl animate-orb-drift-reverse pointer-events-none" />
+      <FloatingOrb className="absolute top-20 -left-32 w-96 h-96 bg-rojho/[0.12] rounded-full blur-3xl pointer-events-none" speed={20} range={40} />
+      <FloatingOrb className="absolute bottom-10 -right-24 w-80 h-80 bg-rojho/[0.08] rounded-full blur-3xl pointer-events-none" speed={25} range={35} />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
@@ -58,7 +59,7 @@ export default function Hero() {
 
           {/* Right visual */}
           <div className="relative flex items-center justify-center lg:justify-end">
-            <div className="absolute w-80 h-80 bg-rojho/10 rounded-full blur-3xl -z-10 animate-orb-drift-slow" />
+            <FloatingOrb className="absolute w-80 h-80 bg-rojho/10 rounded-full blur-3xl -z-10" speed={30} range={25} />
 
             {/* Main dashboard card */}
             <div className="relative bg-white rounded-2xl shadow-xl border border-charcoal/5 p-6 w-72 sm:w-80">

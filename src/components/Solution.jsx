@@ -1,6 +1,7 @@
 import { Compass, Palette, Rocket } from 'lucide-react'
 import ScrollReveal from './ScrollReveal'
 import StaggerGroup from './StaggerGroup'
+import FloatingOrb from './FloatingOrb'
 
 const steps = [
   {
@@ -30,8 +31,8 @@ export default function Solution() {
   return (
     <section className="relative py-20 lg:py-28 bg-dark text-white overflow-clip bg-grain-dark">
       {/* Floating background orbs */}
-      <div className="absolute top-1/4 right-0 w-[500px] h-[500px] bg-rojho/20 rounded-full blur-[150px] animate-orb-drift pointer-events-none" />
-      <div className="absolute bottom-1/4 left-0 w-96 h-96 bg-rojho/15 rounded-full blur-[150px] animate-orb-drift-reverse pointer-events-none" />
+      <FloatingOrb className="absolute top-1/4 right-0 w-[500px] h-[500px] bg-rojho/20 rounded-full blur-[150px] pointer-events-none" speed={20} range={45} />
+      <FloatingOrb className="absolute bottom-1/4 left-0 w-96 h-96 bg-rojho/15 rounded-full blur-[150px] pointer-events-none" speed={25} range={35} />
 
       <div className="relative z-10 max-w-7xl mx-auto px-6">
         <div className="max-w-2xl">
