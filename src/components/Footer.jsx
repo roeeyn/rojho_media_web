@@ -1,4 +1,5 @@
 import { ArrowUpRight } from 'lucide-react'
+import ScrollReveal from './ScrollReveal'
 
 const navLinks = [
   { name: 'Inicio', href: '#' },
@@ -16,6 +17,7 @@ const socialLinks = [
 export default function Footer() {
   return (
     <footer className="border-t border-charcoal/10 py-14">
+      <ScrollReveal>
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
@@ -79,10 +81,10 @@ export default function Footer() {
               Contáctanos
             </h4>
             <a
-              href="mailto:hello@rojhomedia.com"
+              href="mailto:hola@rojho.media"
               className="text-sm text-charcoal/50 hover:text-charcoal transition-colors duration-200 cursor-pointer"
             >
-              hello@rojhomedia.com
+              hola@rojho.media
             </a>
           </div>
         </div>
@@ -96,6 +98,7 @@ export default function Footer() {
           </p>
         </div>
       </div>
+      </ScrollReveal>
     </footer>
   )
 }
