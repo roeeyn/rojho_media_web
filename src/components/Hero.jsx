@@ -1,10 +1,12 @@
 import { ArrowRight, TrendingUp, Zap } from 'lucide-react'
+import ScrollReveal from './ScrollReveal'
+import AnimatedCounter from './AnimatedCounter'
 
 const stats = [
-  { value: '50+', label: 'Proyectos Entregados' },
-  { value: '200%', label: 'Crecimiento Prom.' },
-  { value: '4.9', label: 'Calificación' },
-  { value: '15+', label: 'Expertos Creativos' },
+  { target: 50, suffix: '+', label: 'Proyectos Entregados' },
+  { target: 200, suffix: '%', label: 'Crecimiento Prom.' },
+  { target: 4.9, suffix: '', decimals: 1, label: 'Calificación' },
+  { target: 15, suffix: '+', label: 'Expertos Creativos' },
 ]
 
 export default function Hero() {
@@ -14,36 +16,40 @@ export default function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-8 items-center">
           {/* Left content */}
           <div>
-            <span className="inline-block px-4 py-1.5 bg-rojho/10 text-rojho-dark text-xs font-semibold uppercase tracking-wider rounded-full">
-              Medios Creativos + Estratégicos
-            </span>
+            <ScrollReveal direction="none" duration={500}>
+              <span className="inline-block px-4 py-1.5 bg-rojho/10 text-rojho-dark text-xs font-semibold uppercase tracking-wider rounded-full">
+                Medios Creativos + Estratégicos
+              </span>
 
-            <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.1] text-charcoal">
-              Eleva tu marca con medios creativos{' '}
-              <span className="font-display italic text-rojho">estratégicos</span>
-            </h1>
+              <h1 className="mt-6 text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-[1.1] text-charcoal">
+                Eleva tu marca con medios creativos{' '}
+                <span className="font-display italic text-rojho">estratégicos</span>
+              </h1>
+            </ScrollReveal>
 
-            <p className="mt-6 text-lg text-charcoal/60 max-w-lg leading-relaxed">
-              No somos una agencia cualquiera — combinamos mensajes estratégicos,
-              narrativa visual y experiencias enfocadas en conversión para ayudar
-              a fundadores y negocios modernos a crecer con claridad e impacto.
-            </p>
+            <ScrollReveal direction="none" duration={500} delay={150}>
+              <p className="mt-6 text-lg text-charcoal/60 max-w-lg leading-relaxed">
+                No somos una agencia cualquiera — combinamos mensajes estratégicos,
+                narrativa visual y experiencias enfocadas en conversión para ayudar
+                a fundadores y negocios modernos a crecer con claridad e impacto.
+              </p>
 
-            <div className="mt-8 flex flex-wrap items-center gap-4">
-              <a
-                href="#contact"
-                className="inline-flex items-center gap-2 bg-charcoal text-cream px-6 py-3.5 rounded-full text-sm font-semibold hover:bg-charcoal/90 transition-colors duration-200 cursor-pointer"
-              >
-                Iniciar un Proyecto
-                <ArrowRight className="w-4 h-4" />
-              </a>
-              <a
-                href="#services"
-                className="text-sm font-semibold text-charcoal/70 hover:text-charcoal transition-colors duration-200 cursor-pointer"
-              >
-                Conoce Más
-              </a>
-            </div>
+              <div className="mt-8 flex flex-wrap items-center gap-4">
+                <a
+                  href="#contact"
+                  className="inline-flex items-center gap-2 bg-charcoal text-cream px-6 py-3.5 rounded-full text-sm font-semibold hover:bg-charcoal/90 transition-colors duration-200 cursor-pointer"
+                >
+                  Iniciar un Proyecto
+                  <ArrowRight className="w-4 h-4" />
+                </a>
+                <a
+                  href="#services"
+                  className="text-sm font-semibold text-charcoal/70 hover:text-charcoal transition-colors duration-200 cursor-pointer"
+                >
+                  Conoce Más
+                </a>
+              </div>
+            </ScrollReveal>
           </div>
 
           {/* Right visual */}
@@ -108,7 +114,12 @@ export default function Hero() {
             {stats.map((stat, i) => (
               <div key={i} className="text-center">
                 <p className="text-3xl lg:text-4xl font-extrabold text-charcoal">
-                  {stat.value}
+                  <AnimatedCounter
+                    target={stat.target}
+                    suffix={stat.suffix}
+                    decimals={stat.decimals || 0}
+                    duration={2000}
+                  />
                 </p>
                 <p className="mt-1 text-xs font-medium uppercase tracking-wider text-charcoal/50">
                   {stat.label}
