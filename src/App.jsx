@@ -1,3 +1,4 @@
+import { ModeProvider } from './ModeContext'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import PainPoints from './components/PainPoints'
@@ -10,16 +11,18 @@ import Footer from './components/Footer'
 
 export default function App() {
   return (
-    <div className="min-h-screen">
-      <Navbar />
-      <Hero />
-      <PainPoints />
-      <Solution />
-      <Services />
-      <Results />
-      <Process />
-      <FinalCTA />
-      <Footer />
-    </div>
+    <ModeProvider>
+      <div className="min-h-screen">
+        <Navbar />
+        <Hero />
+        <PainPoints />
+        <Solution />
+        <Services />
+        <Results />
+        <Process />
+        <FinalCTA />
+        <Footer />
+      </div>
+    </ModeProvider>
   )
 }

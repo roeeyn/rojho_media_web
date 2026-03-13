@@ -1,8 +1,14 @@
 import { ArrowRight } from 'lucide-react'
 import ScrollReveal from './ScrollReveal'
 import FloatingOrb from './FloatingOrb'
+import ModeFade from './ModeFade'
+import { useMode } from '../ModeContext'
+import { finalCTA } from '../data/content'
 
 export default function FinalCTA() {
+  const { mode } = useMode()
+  const d = finalCTA[mode]
+
   return (
     <section id="contact" className="py-20 lg:py-28">
       <div className="max-w-7xl mx-auto px-6">
@@ -13,31 +19,32 @@ export default function FinalCTA() {
             <FloatingOrb className="absolute -bottom-28 -right-28 w-80 h-80 bg-rojho/10 rounded-full blur-[120px]" speed={25} range={30} />
 
             <div className="relative z-10 max-w-2xl mx-auto">
-              <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight">
-                ¿Listo para construir una marca que{' '}
-                <span className="font-display italic text-rojho">realmente</span>{' '}
-                convierta?
-              </h2>
-              <p className="mt-5 text-white/60 text-lg max-w-lg mx-auto">
-                Platiquemos sobre tu marca, tus objetivos y cómo podemos crear
-                experiencias de medios que generen resultados reales de negocio.
-              </p>
+              <ModeFade>
+                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white leading-tight">
+                  {d.title}
+                </h2>
+                <p className="mt-5 text-white/60 text-lg max-w-lg mx-auto">
+                  {d.description}
+                </p>
+              </ModeFade>
               <ScrollReveal direction="none" delay={400} duration={500}>
-                <div className="mt-8 flex flex-wrap justify-center gap-4">
-                  <a
-                    href="mailto:hola@rojho.media"
-                    className="inline-flex items-center gap-2 bg-rojho text-charcoal px-7 py-3.5 rounded-full text-sm font-semibold hover:bg-rojho-light transition-colors duration-200 cursor-pointer"
-                  >
-                    Agenda una Llamada
-                    <ArrowRight className="w-4 h-4" />
-                  </a>
-                  <a
-                    href="#results"
-                    className="inline-flex items-center gap-2 border border-white/20 text-white px-7 py-3.5 rounded-full text-sm font-semibold hover:border-white/40 transition-colors duration-200 cursor-pointer"
-                  >
-                    Ver Nuestro Trabajo
-                  </a>
-                </div>
+                <ModeFade>
+                  <div className="mt-8 flex flex-wrap justify-center gap-4">
+                    <a
+                      href="mailto:hola@rojho.media"
+                      className="inline-flex items-center gap-2 bg-rojho text-charcoal px-7 py-3.5 rounded-full text-sm font-semibold hover:bg-rojho-light transition-colors duration-200 cursor-pointer"
+                    >
+                      {d.cta}
+                      <ArrowRight className="w-4 h-4" />
+                    </a>
+                    <a
+                      href={d.ctaSecondaryHref}
+                      className="inline-flex items-center gap-2 border border-white/20 text-white px-7 py-3.5 rounded-full text-sm font-semibold hover:border-white/40 transition-colors duration-200 cursor-pointer"
+                    >
+                      {d.ctaSecondary}
+                    </a>
+                  </div>
+                </ModeFade>
               </ScrollReveal>
             </div>
           </div>
